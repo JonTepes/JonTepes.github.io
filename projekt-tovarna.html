@@ -90,10 +90,32 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Skripta za povečavo slik v galeriji (samo za to stran) -->
+			<script>
+				(function($) {
+					$(function() {
+						$('#projekt-galerija').poptrox({
+							caption: function($a) { return $a.children('img').attr('alt'); },
+							overlayColor: '#2c2c2c',
+							overlayOpacity: 0.85,
+							popupCloserText: '',
+							popupLoaderText: '',
+							selector: 'a.image',
+							usePopupCaption: true,
+							usePopupDefaultStyling: false,
+							usePopupEasyClose: false,
+							usePopupNav: true,
+							windowMargin: 50
+						});
+					});
+				})(jQuery);
+			</script>
 
 	</body>
 </html>
