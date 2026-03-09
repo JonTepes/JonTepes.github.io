@@ -107,7 +107,8 @@
 		<!-- Skripta za povečavo slik v galeriji -->
 		<script>
 		(function($) {
-			$(window).on('load', function() {
+			// $(function() {...}) poskrbi, da se skripta zažene TAKOJ in ne čaka na video
+			$(function() {
 				$('#projekt-galerija').poptrox({
 					caption: function($a) { return $a.children('img').attr('alt'); },
 											   overlayColor: '#2c2c2c',
