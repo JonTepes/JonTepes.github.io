@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jon Tepeš - Pametni IoT Hranilnik</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="Jon Tepeš" /></a>
+					<h1><strong>Jon Tepeš</strong></h1><br />
+					<h3>Magistrski študent<br />
+					Organizacija in management informacijskih sistemov<br />
+					Fakulteta za organizacijske vede<br />
+					Univerza v Mariboru</h3>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Projekt Vsebina -->
+					<section>
+						<header class="major">
+							<h2>Pametni IoT hranilnik za živali</h2>
+						</header>
+
+						<!-- Gumb za nazaj -->
+						<ul class="actions">
+							<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na projekte</a></li>
+						</ul>
+
+						<p>Ta projekt rešuje problem zanesljivega avtomatskega hranjenja hišnih ljubljenčkov. Ker so komercialne rešitve pogosto zelo drage, ali pa ob izpadu interneta prenehajo delovati, sem se odločil od začetka zasnovati in izdelati svojo robustno različico.</p>
+
+						<h3>Kako sistem deluje?</h3>
+						<ul>
+							<li><strong>Mehanizem (3D tisk):</strong> Ohišje in notranjost sta v celoti zasnovana v programu Autodesk Fusion 360. Razvil sem poseben parametričen vijačni mehanizem (polž), ki uspešno preprečuje zatikanje suhe hrane (briketov).</li>
+							<li><strong>Elektronika in zanesljivost:</strong> Srce naprave je mikrokontroler ESP32. Ključna prednost mojega dizajna je integracija <strong>RTC modula</strong> (ure realnega časa). To pomeni, da hranilnik ne potrebuje stalne povezave z oblakom in bo žival nahranil točno ob uri, tudi če zmanjka interneta ali se usmerjevalnik ponovno zažene.</li>
+							<li><strong>Programska oprema:</strong> Strojna koda (firmware) je napisana v C++. S pomočjo AI orodij (LLM) sem pospešil razvoj programske logike, kar mi je omogočilo, da sem večino časa posvetil fizični izdelavi, reševanju mehanskih problemov in integraciji strojne opreme.</li>
+						</ul>
+
+						<h3>Galerija</h3>
+						<div class="box alt" id="projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<!-- Prva vrsta -->
+								<div class="col-4"><a href="images/fulls/pet-feeder/completed.jpg" class="image fit"><img src="images/fulls/pet-feeder/completed.jpg" alt="Končan in sestavljen pametni hranilnik" /></a></div>
+								<div class="col-4"><a href="images/fulls/pet-feeder/opened.jpg" class="image fit"><img src="images/fulls/pet-feeder/opened.jpg" alt="Pogled na dozirni mehanizem in elektroniko" /></a></div>
+								<div class="col-4"><a href="images/fulls/pet-feeder/inside.jpg" class="image fit"><img src="images/fulls/pet-feeder/inside.jpg" alt="Pogled v notranjost zalogovnika za hrano" /></a></div>
+
+								<!-- Druga vrsta -->
+								<div class="col-6"><a href="images/fulls/pet-feeder/circuit_image.png" class="image fit"><img src="images/fulls/pet-feeder/circuit_image.png" alt="Načrt vezja - ESP32, RTC modul in krmiljenje motorja" /></a></div>
+								<div class="col-6"><a href="images/fulls/pet-feeder/back_view.jpg" class="image fit"><img src="images/fulls/pet-feeder/back_view.jpg" alt="Zadnja stran naprave s kontrolnimi gumbi in priključki" /></a></div>
+							</div>
+						</div>
+
+						<!-- Povezava na GitHub -->
+						<ul class="actions">
+							<li><a href="https://github.com/JonTepes/AutomaticPetFeeder" target="_blank" class="button primary icon brands fa-github">Poglej kodo na GitHubu</a></li>
+						</ul>
+
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!-- Skripta za povečavo slik v galeriji -->
+			<script>
+				(function($) {
+					$(function() {
+						$('#projekt-galerija').poptrox({
+							caption: function($a) { return $a.children('img').attr('alt'); },
+							overlayColor: '#2c2c2c',
+							overlayOpacity: 0.85,
+							popupCloserText: '',
+							popupLoaderText: '',
+							selector: 'a.image',
+							usePopupCaption: true,
+							usePopupDefaultStyling: false,
+							usePopupEasyClose: false,
+							usePopupNav: true,
+							windowMargin: 50
+						});
+					});
+				})(jQuery);
+			</script>
+
+	</body>
+</html>
