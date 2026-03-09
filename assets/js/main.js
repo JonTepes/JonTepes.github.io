@@ -93,37 +93,25 @@
 
 			}
 
-	// Main Sections: Two.
+			// Main Sections: Two.
 
-		// Lightbox gallery.
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+			// Lightbox gallery (IZKLOPLJENO)
 
-		<!-- Skripta za povečavo slik v galeriji -->
-		<script>
-		(function($) {
-			// $(function() {...}) poskrbi, da se skripta zažene TAKOJ in ne čaka na video
-			$(function() {
-				$('#projekt-galerija').poptrox({
-					caption: function($a) { return $a.children('img').attr('alt'); },
-											   overlayColor: '#2c2c2c',
-											   overlayOpacity: 0.85,
-											   popupCloserText: '',
-											   popupLoaderText: '',
-											   selector: 'a.image',
-											   usePopupCaption: true,
-											   usePopupDefaultStyling: false,
-											   usePopupEasyClose: false,
-											   usePopupNav: true,
-											   windowMargin: 50
-				});
-			});
-		})(jQuery);
-		</script>
+				// $ window.*on('load', function() {
+    //
+				// 	$('#two').poptrox({
+				// 		caption: function($a) { return $a.next('h3').text(); },
+				// 		overlayColor: '#2c2c2c',
+				// 		overlayOpacity: 0.85,
+				// 		popupCloserText: '',
+				// 		popupLoaderText: '',
+				// 		selector: '.work-item a.image',
+				// 		usePopupCaption: true,
+				// 		usePopupDefaultStyling: false,
+				// 		usePopupEasyClose: false,
+				// 		usePopupNav: true,
+				// 		windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				// 	});
+				// });
 
 })(jQuery);
