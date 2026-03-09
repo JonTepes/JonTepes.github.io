@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jon Tepeš - RGB Senčna Svetilka</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="Jon Tepeš" /></a>
+					<h1><strong>Jon Tepeš</strong></h1><br />
+					<h3>Magistrski študent<br />
+					Organizacija in management informacijskih sistemov<br />
+					Fakulteta za organizacijske vede<br />
+					Univerza v Mariboru</h3>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Projekt Vsebina -->
+					<section>
+						<header class="major">
+							<h2>RGB senčna svetilka in delo z materiali</h2>
+						</header>
+
+						<!-- Gumb za nazaj -->
+						<ul class="actions">
+							<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na projekte</a></li>
+						</ul>
+
+						<p>Ta projekt združuje teorijo barv, 3D modeliranje in ročne spretnosti. Izdelal sem po meri narejeno svetilko z ločenimi viri rdeče, zelene in modre (RGB) svetlobe, ki pri osvetljevanju objektov ustvarjajo večbarvne sence (Cyan, Magenta in Rumena).</p>
+
+						<h3>Zasnova in izdelava</h3>
+						<ul>
+							<li><strong>3D Načrtovanje:</strong> Celotno ohišje, roke in mehanizem svetilke sem zasnoval v programu Autodesk Fusion 360, da bi zagotovil optimalne kote za mešanje svetlobe.</li>
+							<li><strong>Izdelava baze iz betona:</strong> Da bi svetilki zagotovil stabilnost (težišče) in moderen industrijski videz, sem za podstavek uporabil beton. Pri tem sem moral v sam kalup za beton natančno vgraditi in zaščititi elektroniko.</li>
+							<li><strong>Kombiniranje materialov:</strong> Ta projekt je odličen prikaz mojih izkušenj z različnimi materiali. Pri svojih projektih pogosto združujem 3D tisk (plastiko) s kompoziti (beton, epoksi smola), akrilnim steklom in lesom.</li>
+						</ul>
+
+						<h3>Galerija</h3>
+						<div class="box alt" id="projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<!-- Prva vrsta (2 sliki, polovična širina) -->
+								<div class="col-6"><a href="images/fulls/lamp/aesthetic-shot.jpg" class="image fit"><img src="images/fulls/lamp/aesthetic-shot.jpg" alt="Prikaz RGB senc v prostoru" /></a></div>
+								<div class="col-6"><a href="images/fulls/lamp/CAD.png" class="image fit"><img src="images/fulls/lamp/CAD.png" alt="3D CAD model v programu Fusion 360" /></a></div>
+
+								<!-- Druga vrsta (2 sliki, polovična širina) -->
+								<div class="col-6"><a href="images/fulls/lamp/concrete-base.png" class="image fit"><img src="images/fulls/lamp/concrete-base.png" alt="Betonska baza in integracija elektronike" /></a></div>
+								<div class="col-6"><a href="images/fulls/lamp/above.jpg" class="image fit"><img src="images/fulls/lamp/above.jpg" alt="Pogled na svetilko od zgoraj med delovanjem" /></a></div>
+							</div>
+						</div>
+
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!-- Skripta za povečavo slik v galeriji -->
+			<script>
+				(function($) {
+					$(function() {
+						$('#projekt-galerija').poptrox({
+							caption: function($a) { return $a.children('img').attr('alt'); },
+							overlayColor: '#2c2c2c',
+							overlayOpacity: 0.85,
+							popupCloserText: '',
+							popupLoaderText: '',
+							selector: 'a.image',
+							usePopupCaption: true,
+							usePopupDefaultStyling: false,
+							usePopupEasyClose: false,
+							usePopupNav: true,
+							windowMargin: 50
+						});
+					});
+				})(jQuery);
+			</script>
+
+	</body>
+</html>
