@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jon Tepeš - Eksperimenti in manjši projekti</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="Jon Tepeš" /></a>
+				<h1><strong>Jon Tepeš</strong></h1><br />
+				<h3>Manjši projekti in eksperimenti</h3>
+			</div>
+		</header>
+
+		<div id="main">
+			<section>
+				<ul class="actions">
+					<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na glavno stran</a></li>
+				</ul>
+
+				<!-- Tipkovnice -->
+				<h2>Makro tipkovnice</h2>
+				<p>Izdelal sem dve različni makro tipkovnici. Ena deluje preko Bluetooth povezave (za brezžično uporabo), druga pa je žična. Ena izmed njih vključuje tudi rotacijske encoderje za hitro upravljanje glasnosti ali drugih parametrov.</p>
+				<div class="box alt" id="projekt-galerija">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-6"><a href="images/fulls/keypads/green-keypad.jpg" class="image fit"><img src="images/fulls/keypads/green-keypad.jpg" alt="Bluetooth makro tipkovnica" /></a></div>
+						<div class="col-6"><a href="images/fulls/keypads/white-keypad.jpg" class="image fit"><img src="images/fulls/keypads/white-keypad.jpg" alt="Žična tipkovnica z encoderji" /></a></div>
+					</div>
+				</div>
+
+				<!-- Hitpad -->
+				<h2>Hitpad (Game controller)</h2>
+				<p>Krmilnik za igre, zasnovan na mikrokontrolerju RP2040. Za programsko opremo sem uporabil preverjeno odprtokodno krmilje (GP2040-CE), kar zagotavlja izjemno nizko zakasnitev in visoko odzivnost.</p>
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-6"><a href="images/fulls/hitpad/front-view.jpg" class="image fit"><img src="images/fulls/hitpad/front-view.jpg" alt="Hitpad - pogled od spredaj" /></a></div>
+						<div class="col-6"><a href="images/fulls/hitpad/top-view.jpg" class="image fit"><img src="images/fulls/hitpad/top-view.jpg" alt="Hitpad - pogled od zgoraj" /></a></div>
+					</div>
+				</div>
+
+				<!-- LED Ura -->
+				<h2>LED Matrix koledar in ura</h2>
+				<p>Projekt pametne ure, ki se preko API-ja sinhronizira z mojim Google Koledarjem. Na LED matriki prikazuje trenutni čas in opomnike za prihajajoče dogodke.</p>
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><a href="images/fulls/clock/working.jpg" class="image fit"><img src="images/fulls/clock/working.jpg" alt="Ura v delovanju" /></a></div>
+						<div class="col-4"><a href="images/fulls/clock/electronics.jpg" class="image fit"><img src="images/fulls/clock/electronics.jpg" alt="Elektronika in napajanje" /></a></div>
+						<div class="col-4"><a href="images/fulls/clock/led-matrix.jpg" class="image fit"><img src="images/fulls/clock/led-matrix.jpg" alt="LED matrika" /></a></div>
+					</div>
+				</div>
+
+				<!-- Zoetrope -->
+				<h2>Digitalni Zoetrope</h2>
+				<p>Eksperimentalni projekt, kjer sem uporabil vrteči se zaslon z režo. S pomočjo Persistence of Vision (POV) efekta slika ostane vidna iz katere koli smeri.</p>
+				<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 2em;">
+					<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/TVOJ_YOUTUBE_ID" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><a href="images/fulls/digital-zoetrope/disassembled.jpg" class="image fit"><img src="images/fulls/digital-zoetrope/disassembled.jpg" alt="Komponente" /></a></div>
+						<div class="col-4"><a href="images/fulls/digital-zoetrope/combined.jpg" class="image fit"><img src="images/fulls/digital-zoetrope/combined.jpg" alt="Sestavljena naprava" /></a></div>
+						<div class="col-4"><a href="images/fulls/digital-zoetrope/working.jpg" class="image fit"><img src="images/fulls/digital-zoetrope/working.jpg" alt="Naprava v delovanju" /></a></div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				</ul>
+				<ul class="copyright"><li>&copy; Jon Tepeš</li></ul>
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+            (function($) {
+                $(function() {
+                    $('#projekt-galerija').poptrox({
+                        selector: 'a.image',
+                        usePopupDefaultStyling: false,
+                        windowMargin: 50
+                    });
+                });
+            })(jQuery);
+        </script>
+	</body>
+</html>
