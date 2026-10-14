@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Jon Tepeš - Smart pet feeder</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong><a href="index-en.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototyping<span class="sep"> · </span><br />Embedded systems<span class="sep"> · </span><br />PCB design<span class="sep"> · </span><br />Robotics</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Master's student<br />University of Maribor<br />Ljubljana, Slovenia</p>
+					<p><a href="projekt-hranilnik.html">Slovenščina</a></p>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section>
+						<header class="major">
+							<h2>Smart pet feeder</h2>
+						</header>
+
+						<ul class="actions">
+							<li><a href="index-en.html" class="button small icon solid fa-arrow-left">Back to projects</a></li>
+						</ul>
+
+						<p>This project makes automatic pet feeding reliable. Commercial feeders are often expensive or stop working when the internet goes down, so I designed and built my own from scratch.</p>
+
+						<h3>Demo</h3>
+						<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 2em;">
+							<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/r4_g70Mr-q4" frameborder="0" allowfullscreen></iframe>
+						</div>
+
+						<h3>How it works</h3>
+						<ul>
+							<li><strong>Mechanism (3D printing):</strong> the enclosure and internals are fully designed in Fusion 360. A parametric auger keeps dry food (kibble) from jamming.</li>
+							<li><strong>Electronics and reliability:</strong> an ESP32 with a real-time clock (RTC) module. The feeder needs no cloud connection and feeds on time even without internet.</li>
+							<li><strong>Software:</strong> C++ firmware, written with help from AI tools. I spent most of the time on mechanics, fabrication and hardware integration.</li>
+						</ul>
+
+						<h3>Gallery</h3>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><a href="images/fulls/pet-feeder/completed.jpg" class="image fit"><img src="images/fulls/pet-feeder/completed.jpg" alt="Finished feeder" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/pet-feeder/opened.jpg" class="image fit"><img src="images/fulls/pet-feeder/opened.jpg" alt="Dosing mechanism and electronics" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/pet-feeder/inside.jpg" class="image fit"><img src="images/fulls/pet-feeder/inside.jpg" alt="Inside the food hopper" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/pet-feeder/circuit_image.png" class="image fit"><img src="images/fulls/pet-feeder/circuit_image.png" alt="Circuit: ESP32, RTC module and motor driver" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/pet-feeder/back_view.jpg" class="image fit"><img src="images/fulls/pet-feeder/back_view.jpg" alt="Back with buttons and connectors" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+						<ul class="actions">
+							<li><a href="https://github.com/JonTepes/AutomaticPetFeeder" target="_blank" class="button primary icon brands fa-github">View on GitHub</a></li>
+						</ul>
+
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>

@@ -1,63 +1,73 @@
 <!DOCTYPE HTML>
-<html>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="sl">
 	<head>
-		<title>Jon Tepeš - ESPHome Pametni Lonček</title>
+		<title>Jon Tepeš - Pametni lonček za rastline</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<h1><strong>Jon Tepeš</strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					<h3>Magistrski študent<hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					Organizacija in management<br /> informacijskih sistemov<hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					Fakulteta za organizacijske vede<hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					Univerza v Mariboru</h3>
+					<h1><strong><a href="index.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototipiranje<span class="sep"> · </span><br />Vgrajeni sistemi<span class="sep"> · </span><br />Tiskana vezja<span class="sep"> · </span><br />Robotika</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Magistrski študent<br />FOV, Univerza v Mariboru<br />Ljubljana</p>
+					<p><a href="projekt-loncek-en.html">English</a></p>
 				</div>
 			</header>
 
 		<!-- Main -->
 			<div id="main">
-
-				<!-- Projekt Vsebina -->
 					<section>
 						<header class="major">
-							<h2>ESPHome pametno korito za rastline</h2>
+							<h2>Pametni lonček za rastline (ESPHome)</h2>
 						</header>
 
-						<!-- Gumb za nazaj -->
 						<ul class="actions">
 							<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na projekte</a></li>
 						</ul>
 
-						<p>Sistem za samodejno zalivanje sobnih rastlin, ki preprečuje tako presušitev kot tudi prekomerno zalivanje. Projekt dokazuje moje sposobnosti priprave celovite IoT rešitve – od oblikovanja strojne opreme do integracije v sisteme za pametni dom.</p>
+						<p>Sistem za samodejno zalivanje sobnih rastlin, ki preprečuje tako presušitev kot preveč vode. Celotna rešitev: od ohišja in elektronike do integracije v pametni dom.</p>
 
-						<h3>Ključne lastnosti sistema</h3>
+						<h3>Ključne lastnosti</h3>
 						<ul>
-							<li><strong>3D Načrtovanje in tisk:</strong> V programu Fusion 360 sem zasnoval ohišje, ki vsebuje tako prostor za prst in rastlino kot tudi skrit rezervoar za vodo in elektroniko.</li>
-							<li><strong>Elektronika in učinkovitost:</strong> Sistem temelji na mikrokontrolerju ESP32, ki bere podatke iz senzorja vlažnosti prsti in krmili vodno črpalko. Za maksimalno energetsko učinkovitost naprava večino časa "spi" (deep sleep) in se prebudi le, ko je čas za merjenje ali zalivanje.</li>
-							<li><strong>Smart Home integracija:</strong> Strojna koda (firmware) je zgrajena s pomočjo platforme ESPHome. To omogoča brezhibno povezljivost in nadzor preko sistema <strong>Home Assistant</strong>, kjer lahko na daljavo spremljam nivoje vlage in prilagajam parametre delovanja.</li>
+							<li><strong>3D načrtovanje in tisk:</strong> v Fusion 360 sem zasnoval ohišje s prostorom za rastlino ter skritim rezervoarjem za vodo in elektroniko.</li>
+							<li><strong>Senzorji in črpalka:</strong> ESP32 meri vlago prsti in nivo vode v rezervoarju (ultrazvočni senzor) ter vklopi črpalko le, ko je prst presuha.</li>
+							<li><strong>Varčevanje z energijo:</strong> naprava večino časa spi (deep sleep) in se zbudi le za meritev ali zalivanje.</li>
+							<li><strong>Home Assistant:</strong> firmware temelji na ESPHome. Ciljno vlago, kalibracijo senzorjev, čas delovanja črpalke in interval spanja nastavljam na daljavo.</li>
+						</ul>
+
+						<h3>Lastno tiskano vezje (nova različica)</h3>
+						<ul>
+							<li><strong>Zasnova:</strong> vezje v KiCadu z ESP32-C3 SuperMini, napajanjem iz Li-ion celice 18650, polnjenjem prek USB-C (TP4056), zaščito celice (DW01A + FS8205A), pretvornikom navzgor (MT3608) in regulatorjem 3,3 V. Priključki za črpalko, senzor vlage in ultrazvočni senzor.</li>
+							<li><strong>Status:</strong> vezje je načrtovano, datoteke za izdelavo so pripravljene, izdelano še ni. <a href="images/fulls/flower-pot/plantpot-schematic.pdf" target="_blank">Shema (PDF)</a></li>
 						</ul>
 
 						<h3>Galerija</h3>
-						<div class="box alt" id="projekt-galerija">
+						<div class="box alt projekt-galerija">
 							<div class="row gtr-50 gtr-uniform">
-								<!-- Prva vrsta (3 slike) -->
-								<div class="col-4"><a href="images/fulls/flower-pot/far.jpg" class="image fit"><img src="images/fulls/flower-pot/far.jpg" alt="Pametni cvetlični lonček v prostoru" /></a></div>
-								<div class="col-4"><a href="images/fulls/flower-pot/CAD.png" class="image fit"><img src="images/fulls/flower-pot/CAD.png" alt="3D CAD model ohišja v programu Fusion 360" /></a></div>
-								<div class="col-4"><a href="images/fulls/flower-pot/close-up.jpg" class="image fit"><img src="images/fulls/flower-pot/close-up.jpg" alt="Pogled od blizu na rastlino" /></a></div>
-
-								<!-- Druga vrsta (2 sliki) -->
-								<div class="col-6"><a href="images/fulls/flower-pot/wiring.jpg" class="image fit"><img src="images/fulls/flower-pot/wiring.jpg" alt="Elektronika, ožičenje in vodna črpalka znotraj ohišja" /></a></div>
-								<div class="col-6"><a href="images/fulls/flower-pot/home-assistant.png" class="image fit"><img src="images/fulls/flower-pot/home-assistant.png" alt="Nadzorna plošča (Dashboard) v sistemu Home Assistant" /></a></div>
+								<div class="col-4"><a href="images/fulls/flower-pot/far.jpg" class="image fit"><img src="images/fulls/flower-pot/far.jpg" alt="Pametni lonček v prostoru" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/flower-pot/CAD.png" class="image fit"><img src="images/fulls/flower-pot/CAD.png" alt="3D CAD model ohišja v Fusion 360" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/flower-pot/close-up.jpg" class="image fit"><img src="images/fulls/flower-pot/close-up.jpg" alt="Pogled od blizu" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/flower-pot/wiring.jpg" class="image fit"><img src="images/fulls/flower-pot/wiring.jpg" alt="Elektronika, ožičenje in črpalka v ohišju" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/flower-pot/home-assistant.png" class="image fit"><img src="images/fulls/flower-pot/home-assistant.png" alt="Nadzorna plošča v Home Assistantu" loading="lazy" /></a></div>
+								<div class="col-12"><a href="images/fulls/flower-pot/pcb-render.jpg" class="image fit"><img src="images/fulls/flower-pot/pcb-render.jpg" alt="Lastno tiskano vezje – 3D pogled (KiCad)" loading="lazy" /></a></div>
 							</div>
 						</div>
 
 					</section>
-
 			</div>
 
 		<!-- Footer -->
@@ -81,27 +91,25 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-			<!-- Skripta za povečavo slik v galeriji -->
-			<script>
-				(function($) {
-					$(function() {
-						$('#projekt-galerija').poptrox({
-							caption: function($a) { return $a.children('img').attr('alt'); },
-							overlayColor: '#2c2c2c',
-							overlayOpacity: 0.85,
-							popupCloserText: '',
-							popupLoaderText: '',
-							selector: 'a.image',
-							usePopupCaption: true,
-							usePopupDefaultStyling: false,
-							usePopupEasyClose: false,
-							usePopupNav: true,
-							windowMargin: 50
-						});
+		<script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
 					});
-				})(jQuery);
-			</script>
+				});
+			})(jQuery);
+		</script>
 
 	</body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Jon Tepeš - Smaller projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong><a href="index-en.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototyping<span class="sep"> · </span><br />Embedded systems<span class="sep"> · </span><br />PCB design<span class="sep"> · </span><br />Robotics</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Master's student<br />University of Maribor<br />Ljubljana, Slovenia</p>
+					<p><a href="projekt-eksperimenti.html">Slovenščina</a></p>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section>
+						<header class="major">
+							<h2>Smaller projects</h2>
+						</header>
+
+						<ul class="actions">
+							<li><a href="index-en.html" class="button small icon solid fa-arrow-left">Back to projects</a></li>
+						</ul>
+
+						<h3>Earlier macro keyboards</h3>
+						<p>Before my <a href="projekt-tipkovnica-en.html">latest keyboard with a custom PCB</a> I built two macro keyboards: a wireless one (Bluetooth) and a wired one with rotary encoders for volume and other settings.</p>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6"><a href="images/fulls/keypads/green-keypad.jpg" class="image fit"><img src="images/fulls/keypads/green-keypad.jpg" alt="Bluetooth macro keyboard" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/keypads/white-keypad.jpg" class="image fit"><img src="images/fulls/keypads/white-keypad.jpg" alt="Wired keyboard with encoders" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+						<h3>Hitpad (game controller)</h3>
+						<p>A game controller built around an RP2040 microcontroller, running the proven open-source GP2040-CE firmware for very low latency.</p>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6"><a href="images/fulls/hitpad/front-view.jpg" class="image fit"><img src="images/fulls/hitpad/front-view.jpg" alt="Hitpad, front" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/hitpad/top-view.jpg" class="image fit"><img src="images/fulls/hitpad/top-view.jpg" alt="Hitpad, top" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+						<h3>LED calendar clock</h3>
+						<p>A clock that syncs with Google Calendar through its API and shows the time and upcoming events on LED strips.</p>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><a href="images/fulls/clock/working.jpg" class="image fit"><img src="images/fulls/clock/working.jpg" alt="The clock running" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/clock/electronics.jpg" class="image fit"><img src="images/fulls/clock/electronics.jpg" alt="Electronics and power" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/clock/led-matrix.jpg" class="image fit"><img src="images/fulls/clock/led-matrix.jpg" alt="LED matrix" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>

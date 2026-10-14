@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="sl">
+	<head>
+		<title>Jon Tepeš - Star Pointer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong><a href="index.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototipiranje<span class="sep"> · </span><br />Vgrajeni sistemi<span class="sep"> · </span><br />Tiskana vezja<span class="sep"> · </span><br />Robotika</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Magistrski študent<br />FOV, Univerza v Mariboru<br />Ljubljana</p>
+					<p><a href="projekt-starpointer-en.html">English</a></p>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section>
+						<header class="major">
+							<h2>Star Pointer – kazalec planetov</h2>
+						</header>
+
+						<ul class="actions">
+							<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na projekte</a></li>
+						</ul>
+
+						<p>Dvoosni kazalec, ki iz GPS lokacije in točnega časa izračuna, kje na nebu je izbrani planet, in se usmeri vanj.</p>
+
+						<h3>Video</h3>
+						<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 2em;">
+							<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/T3wj16ys048" frameborder="0" allowfullscreen></iframe>
+						</div>
+
+						<h3>Kako deluje</h3>
+						<ul>
+							<li><strong>Mehanika:</strong> 3D tiskano ohišje in kazalec, ki ga premikata dva motorja: eden za smer (azimut), drugi za nagib.</li>
+							<li><strong>Senzorji:</strong> GPS modul da lokacijo in čas, kompas in IMU na vrhu kazalca pa merita, kam kazalec dejansko kaže.</li>
+							<li><strong>Krmiljenje:</strong> mikrokontroler ESP32 primerja izračunano in izmerjeno smer ter zaprtozančno popravlja položaj kazalca.</li>
+						</ul>
+
+						<h3>Nadgradnja v razvoju: OmniPointer</h3>
+						<p>Isti kazalec kot navigacijska naprava: cilj izbereš na zemljevidu v brskalniku na telefonu in ga prek Bluetootha pošlješ kazalcu, ki pokaže smer po cesti ali v ravni črti. Firmware in spletni vmesnik sta napisana, na napravi še nista preizkušena.</p>
+
+						<h3>Galerija</h3>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6"><a href="images/fulls/star-pointer/assembled.jpg" class="image fit"><img src="images/fulls/star-pointer/assembled.jpg" alt="Sestavljen Star Pointer" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/star-pointer/with-selector.jpg" class="image fit"><img src="images/fulls/star-pointer/with-selector.jpg" alt="Star Pointer na mizi" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Jon Tepeš - Smart plant pot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong><a href="index-en.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototyping<span class="sep"> · </span><br />Embedded systems<span class="sep"> · </span><br />PCB design<span class="sep"> · </span><br />Robotics</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Master's student<br />University of Maribor<br />Ljubljana, Slovenia</p>
+					<p><a href="projekt-loncek.html">Slovenščina</a></p>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section>
+						<header class="major">
+							<h2>Smart plant pot (ESPHome)</h2>
+						</header>
+
+						<ul class="actions">
+							<li><a href="index-en.html" class="button small icon solid fa-arrow-left">Back to projects</a></li>
+						</ul>
+
+						<p>An automatic watering system for house plants that prevents both drying out and overwatering. A complete solution: from the enclosure and electronics to smart-home integration.</p>
+
+						<h3>Key features</h3>
+						<ul>
+							<li><strong>3D design and printing:</strong> I designed the enclosure in Fusion 360 with room for the plant and a hidden tank for water and electronics.</li>
+							<li><strong>Sensors and pump:</strong> an ESP32 measures soil moisture and the tank water level (ultrasonic sensor) and runs the pump only when the soil is too dry.</li>
+							<li><strong>Low power:</strong> the device sleeps most of the time (deep sleep) and wakes only to measure or water.</li>
+							<li><strong>Home Assistant:</strong> the firmware is built on ESPHome. Target moisture, sensor calibration, pump run time and sleep interval can be set remotely.</li>
+						</ul>
+
+						<h3>Custom PCB (new revision)</h3>
+						<ul>
+							<li><strong>Design:</strong> a KiCad board with an ESP32-C3 SuperMini, powered by an 18650 Li-ion cell with USB-C charging (TP4056), cell protection (DW01A + FS8205A), a boost converter (MT3608) and a 3.3 V regulator. Connectors for the pump, moisture sensor and ultrasonic sensor.</li>
+							<li><strong>Status:</strong> designed and ready for manufacturing; not built yet. <a href="images/fulls/flower-pot/plantpot-schematic.pdf" target="_blank">Schematic (PDF)</a></li>
+						</ul>
+
+						<h3>Gallery</h3>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><a href="images/fulls/flower-pot/far.jpg" class="image fit"><img src="images/fulls/flower-pot/far.jpg" alt="Smart plant pot in a room" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/flower-pot/CAD.png" class="image fit"><img src="images/fulls/flower-pot/CAD.png" alt="3D CAD model of the enclosure in Fusion 360" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/flower-pot/close-up.jpg" class="image fit"><img src="images/fulls/flower-pot/close-up.jpg" alt="Close-up" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/flower-pot/wiring.jpg" class="image fit"><img src="images/fulls/flower-pot/wiring.jpg" alt="Electronics, wiring and pump inside the enclosure" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/flower-pot/home-assistant.png" class="image fit"><img src="images/fulls/flower-pot/home-assistant.png" alt="Home Assistant dashboard" loading="lazy" /></a></div>
+								<div class="col-12"><a href="images/fulls/flower-pot/pcb-render.jpg" class="image fit"><img src="images/fulls/flower-pot/pcb-render.jpg" alt="Custom PCB – 3D view (KiCad)" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>

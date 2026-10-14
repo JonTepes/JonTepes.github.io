@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="sl">
+	<head>
+		<title>Jon Tepeš - Focus Coin</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong><a href="index.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototipiranje<span class="sep"> · </span><br />Vgrajeni sistemi<span class="sep"> · </span><br />Tiskana vezja<span class="sep"> · </span><br />Robotika</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Magistrski študent<br />FOV, Univerza v Mariboru<br />Ljubljana</p>
+					<p><a href="projekt-focuscoin-en.html">English</a></p>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section>
+						<header class="major">
+							<h2>Focus Coin – brezžični senzor orientacije</h2>
+						</header>
+
+						<ul class="actions">
+							<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na projekte</a></li>
+						</ul>
+
+						<p>Telefon in računalnik sta največja motilca pri delu. Focus Coin je fizično stikalo za fokus: ko kovanec obrneš na stran za delo, računalnik in telefon blokirata izbrane aplikacije in spletne strani; ko ga obrneš nazaj, se spet sprostijo.</p>
+
+						<h3>Kako deluje</h3>
+						<ul>
+							<li><strong>Prototip:</strong> mikrokontroler nRF52840 (ProMicro) in pospeškometer/žiroskop BMI160 v 3D tiskanem ohišju z barvno označenima stranema.</li>
+							<li><strong>Nizka poraba:</strong> nRF52840 je skoraj ves čas v najglobljem spanju (System OFF). IMU v varčnem načinu sam zazna gibanje in mirovanje ter s prekinitvijo zbudi mikrokontroler, ki prebere orientacijo, jo pošlje prek BLE in spet zaspi. Zadnji način se ohrani v registru, ki preživi spanje.</li>
+							<li><strong>Programska oprema:</strong> aplikaciji za Linux in Android poslušata BLE oglaševanje kovanca in blokirata izbrane aplikacije in spletne strani. Firmware in aplikacije so razviti s pomočjo AI orodij; sistem, izbiro komponent in testiranje na strojni opremi sem naredil sam.</li>
+						</ul>
+
+						<h3>Lastno tiskano vezje (druga različica)</h3>
+						<ul>
+							<li><strong>Zasnova:</strong> okroglo vezje premera 30 mm, načrtovano v KiCadu: Bluetooth modul z EFR32BG22, pospeškometer LIS2DW12 z vgrajeno zaznavo orientacije, baterija CR2032 na hrbtni strani in SWD blazinice za programiranje.</li>
+							<li><strong>Zaščita in poraba:</strong> P-MOSFET ščiti vezje pred obrnjeno baterijo. Ocenjena povprečna poraba je okoli 2 µA, kar pomeni več let delovanja na eni bateriji.</li>
+							<li><strong>Status:</strong> pregled DRC brez napak, vezje še ni izdelano.</li>
+						</ul>
+
+						<h3>Galerija</h3>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6"><a href="images/fulls/focus-coin/coin-top.jpg" class="image fit"><img src="images/fulls/focus-coin/coin-top.jpg" alt="Focus Coin – zgornja stran" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/focus-coin/coin-bottom.jpg" class="image fit"><img src="images/fulls/focus-coin/coin-bottom.jpg" alt="Focus Coin – spodnja stran" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/focus-coin/android-app.jpg" class="image fit"><img src="images/fulls/focus-coin/android-app.jpg" alt="Aplikacija za Android: izbira blokiranih strani" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/focus-coin/pcb-render-top.jpg" class="image fit"><img src="images/fulls/focus-coin/pcb-render-top.jpg" alt="Lastno tiskano vezje – zgornja stran (KiCad)" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/focus-coin/pcb-render-bottom.jpg" class="image fit"><img src="images/fulls/focus-coin/pcb-render-bottom.jpg" alt="Lastno tiskano vezje – spodnja stran z nosilcem baterije" loading="lazy" /></a></div>
+								<div class="col-12"><a href="images/fulls/focus-coin/schematic.png" class="image fit"><img src="images/fulls/focus-coin/schematic.png" alt="Shema vezja (KiCad)" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>

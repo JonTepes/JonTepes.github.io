@@ -1,104 +1,115 @@
 <!DOCTYPE HTML>
-<html>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="sl">
 	<head>
-		<title>Jon Tepeš - Eksperimenti in manjši projekti</title>
+		<title>Jon Tepeš - Manjši projekti</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<h1><strong>Jon Tepeš</strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					<h3>Magistrski študent<hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					Organizacija in management<br /> informacijskih sistemov<hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					Fakulteta za organizacijske vede<hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					Univerza v Mariboru</h3>
+					<h1><strong><a href="index.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototipiranje<span class="sep"> · </span><br />Vgrajeni sistemi<span class="sep"> · </span><br />Tiskana vezja<span class="sep"> · </span><br />Robotika</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Magistrski študent<br />FOV, Univerza v Mariboru<br />Ljubljana</p>
+					<p><a href="projekt-eksperimenti-en.html">English</a></p>
 				</div>
 			</header>
 
-		<div id="main">
-			<section>
-				<ul class="actions">
-					<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na glavno stran</a></li>
-				</ul>
+		<!-- Main -->
+			<div id="main">
+					<section>
+						<header class="major">
+							<h2>Manjši projekti</h2>
+						</header>
 
-				<!-- Tipkovnice -->
-				<h2>Makro tipkovnice</h2>
-				<p>Izdelal sem dve različni makro tipkovnici. Ena deluje preko Bluetooth povezave (za brezžično uporabo), druga pa je žična. Ena izmed njih vključuje tudi rotacijske encoderje za hitro upravljanje glasnosti ali drugih parametrov.</p>
-				<!-- Namesto ID uporabljamo CLASS "projekt-galerija" -->
-				<div class="box alt projekt-galerija">
-					<div class="row gtr-50 gtr-uniform">
-						<div class="col-6"><a href="images/fulls/keypads/green-keypad.jpg" class="image fit"><img src="images/fulls/keypads/green-keypad.jpg" alt="Bluetooth makro tipkovnica" /></a></div>
-						<div class="col-6"><a href="images/fulls/keypads/white-keypad.jpg" class="image fit"><img src="images/fulls/keypads/white-keypad.jpg" alt="Žična tipkovnica z encoderji" /></a></div>
-					</div>
-				</div>
+						<ul class="actions">
+							<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na projekte</a></li>
+						</ul>
 
-				<!-- Hitpad -->
-				<h2>Hitpad (Game controller)</h2>
-				<p>Krmilnik za igre, zasnovan na mikrokontrolerju RP2040. Za programsko opremo sem uporabil preverjeno odprtokodno krmilje (GP2040-CE), kar zagotavlja izjemno nizko zakasnitev in visoko odzivnost.</p>
-				<div class="box alt projekt-galerija">
-					<div class="row gtr-50 gtr-uniform">
-						<div class="col-6"><a href="images/fulls/hitpad/front-view.jpg" class="image fit"><img src="images/fulls/hitpad/front-view.jpg" alt="Hitpad - pogled od spredaj" /></a></div>
-						<div class="col-6"><a href="images/fulls/hitpad/top-view.jpg" class="image fit"><img src="images/fulls/hitpad/top-view.jpg" alt="Hitpad - pogled od zgoraj" /></a></div>
-					</div>
-				</div>
+						<h3>Starejše makro tipkovnice</h3>
+						<p>Pred <a href="projekt-tipkovnica.html">zadnjo tipkovnico z lastnim tiskanim vezjem</a> sem izdelal dve makro tipkovnici: eno brezžično (Bluetooth) in eno žično z rotacijskimi enkoderji za glasnost in druge nastavitve.</p>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6"><a href="images/fulls/keypads/green-keypad.jpg" class="image fit"><img src="images/fulls/keypads/green-keypad.jpg" alt="Bluetooth makro tipkovnica" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/keypads/white-keypad.jpg" class="image fit"><img src="images/fulls/keypads/white-keypad.jpg" alt="Žična tipkovnica z enkoderji" loading="lazy" /></a></div>
+							</div>
+						</div>
 
-				<!-- LED Ura -->
-				<h2>LED koledar in ura</h2>
-				<p>Projekt pametne ure, ki se preko API-ja sinhronizira z mojim Google Koledarjem. Na LED trakovih prikazuje trenutni čas in opomnike za prihajajoče dogodke.</p>
-				<div class="box alt projekt-galerija">
-					<div class="row gtr-50 gtr-uniform">
-						<div class="col-4"><a href="images/fulls/clock/working.jpg" class="image fit"><img src="images/fulls/clock/working.jpg" alt="Ura v delovanju" /></a></div>
-						<div class="col-4"><a href="images/fulls/clock/electronics.jpg" class="image fit"><img src="images/fulls/clock/electronics.jpg" alt="Elektronika in napajanje" /></a></div>
-						<div class="col-4"><a href="images/fulls/clock/led-matrix.jpg" class="image fit"><img src="images/fulls/clock/led-matrix.jpg" alt="LED matrika" /></a></div>
-					</div>
-				</div>
+						<h3>Hitpad (krmilnik za igre)</h3>
+						<p>Krmilnik za igre z mikrokontrolerjem RP2040. Za firmware sem uporabil preverjen odprtokodni projekt GP2040-CE, ki ima zelo nizko zakasnitev.</p>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6"><a href="images/fulls/hitpad/front-view.jpg" class="image fit"><img src="images/fulls/hitpad/front-view.jpg" alt="Hitpad od spredaj" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/hitpad/top-view.jpg" class="image fit"><img src="images/fulls/hitpad/top-view.jpg" alt="Hitpad od zgoraj" loading="lazy" /></a></div>
+							</div>
+						</div>
 
-			</section>
-		</div>
+						<h3>LED koledar in ura</h3>
+						<p>Ura, ki se prek API-ja sinhronizira z Google Koledarjem in na LED trakovih prikazuje čas in prihajajoče dogodke.</p>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><a href="images/fulls/clock/working.jpg" class="image fit"><img src="images/fulls/clock/working.jpg" alt="Ura med delovanjem" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/clock/electronics.jpg" class="image fit"><img src="images/fulls/clock/electronics.jpg" alt="Elektronika in napajanje" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/clock/led-matrix.jpg" class="image fit"><img src="images/fulls/clock/led-matrix.jpg" alt="LED matrika" loading="lazy" /></a></div>
+							</div>
+						</div>
 
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
-					<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright"><li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li></ul>
+					</section>
 			</div>
-		</footer>
 
-		<!-- Vse skripte zdaj vključene enako kot v tovarni -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
 
-		<!-- Popravljena skripta za povečavo (targetira CLASS namesto ID) -->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 		<script>
-            (function($) {
-                $(function() {
-					// Uporabimo .projekt-galerija (s piko, ker je to class), da zajamemo VSE galerije na strani
-                    $('.projekt-galerija').poptrox({
-                        caption: function($a) { return $a.children('img').attr('alt'); },
-                        overlayColor: '#2c2c2c',
-                        overlayOpacity: 0.85,
-                        popupCloserText: '',
-                        popupLoaderText: '',
-                        selector: 'a.image',
-                        usePopupCaption: true,
-                        usePopupDefaultStyling: false,
-                        usePopupEasyClose: false,
-                        usePopupNav: true,
-                        windowMargin: 50
-                    });
-                });
-            })(jQuery);
-        </script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
+					});
+				});
+			})(jQuery);
+		</script>
+
 	</body>
 </html>

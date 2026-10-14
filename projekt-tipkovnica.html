@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="sl">
+	<head>
+		<title>Jon Tepeš - Makro tipkovnica</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong><a href="index.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototipiranje<span class="sep"> · </span><br />Vgrajeni sistemi<span class="sep"> · </span><br />Tiskana vezja<span class="sep"> · </span><br />Robotika</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Magistrski študent<br />FOV, Univerza v Mariboru<br />Ljubljana</p>
+					<p><a href="projekt-tipkovnica-en.html">English</a></p>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section>
+						<header class="major">
+							<h2>Makro tipkovnica z lastnim tiskanim vezjem</h2>
+						</header>
+
+						<ul class="actions">
+							<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na projekte</a></li>
+						</ul>
+
+						<p>Tipkovnica z 20 tipkami za bližnjice in makre, od tiskanega vezja do ohišja. Je zadnja v vrsti tipkovnic, ki jih načrtujem od leta 2022.</p>
+
+						<h3>Zasnova</h3>
+						<ul>
+							<li><strong>Tiskano vezje:</strong> lastno vezje z mikrokontrolerjem ATmega32u4, priključkom USB-C in matriko 5 × 4 tipk z diodami. SMD komponente je sestavil JLCPCB, stikala in ohišje sem dodal sam.</li>
+							<li><strong>Firmware:</strong> QMK z lastno definicijo tipkovnice (matrika, pini, razpored tipk).</li>
+							<li><strong>Ohišje:</strong> 3D tiskano ohišje po meri.</li>
+						</ul>
+
+						<h3>Galerija</h3>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><a href="images/fulls/keyboard/assembled.jpg" class="image fit"><img src="images/fulls/keyboard/assembled.jpg" alt="Sestavljena tipkovnica v ohišju" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/keyboard/pcb-top.jpg" class="image fit"><img src="images/fulls/keyboard/pcb-top.jpg" alt="Tiskano vezje s stikali" loading="lazy" /></a></div>
+								<div class="col-4"><a href="images/fulls/keyboard/pcb-bottom.jpg" class="image fit"><img src="images/fulls/keyboard/pcb-bottom.jpg" alt="Spodnja stran vezja z ATmega32u4 in USB-C" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+						<ul class="actions">
+							<li><a href="projekt-eksperimenti.html" target="_blank" class="button icon solid fa-keyboard">Starejše tipkovnice</a></li>
+						</ul>
+
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Jon Tepeš - 3D printer tool changer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong><a href="index-en.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototyping<span class="sep"> · </span><br />Embedded systems<span class="sep"> · </span><br />PCB design<span class="sep"> · </span><br />Robotics</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Master's student<br />University of Maribor<br />Ljubljana, Slovenia</p>
+					<p><a href="projekt-toolchanger.html">Slovenščina</a></p>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section>
+						<header class="major">
+							<h2>Tool changer for a 3D printer</h2>
+						</header>
+
+						<ul class="actions">
+							<li><a href="index-en.html" class="button small icon solid fa-arrow-left">Back to projects</a></li>
+						</ul>
+
+						<p>Multi-colour printing on a regular printer means swapping filament by hand or wasting a lot of material. So I converted an Ender 3 Max to swap whole print heads automatically.</p>
+
+						<h3>Video: head change during a print</h3>
+						<video src="images/video/toolchanger.mp4" poster="images/fulls/toolchanger/video-frame.jpg" controls muted loop playsinline preload="metadata" style="display: block; width: 100%; max-width: 420px; margin: 0 auto 2em auto;"></video>
+
+						<h3>Design</h3>
+						<ul>
+							<li><strong>Mechanics:</strong> print-head carriers and docking (Anycubic Kobra 2 heads), designed in Fusion 360 and 3D printed.</li>
+							<li><strong>Electronics and firmware:</strong> I moved the printer to Klipper and configured it for multiple print heads and automatic changes during a print.</li>
+							<li><strong>Result:</strong> on calibration prints the prototype completed about 9 out of 10 tool changes.</li>
+						</ul>
+
+						<h3>Status</h3>
+						<p>The project stayed a prototype: making it reliable enough for long prints would need a lot more development. The printer has since been taken apart, but the experience stayed: repeatable positioning, tolerances of 3D-printed parts and systematic testing.</p>
+
+						<h3>Gallery</h3>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6"><a href="images/fulls/toolchanger/tool-head.jpg" class="image fit"><img src="images/fulls/toolchanger/tool-head.jpg" alt="Print head with its tool-change carrier" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/toolchanger/video-frame.jpg" class="image fit"><img src="images/fulls/toolchanger/video-frame.jpg" alt="Printer during a head change" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>

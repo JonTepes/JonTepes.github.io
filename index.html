@@ -4,23 +4,27 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="sl">
 	<head>
-		<title>Jon Tepeš - Prototipiranje in IoT integracija</title>
+		<title>Jon Tepeš - Prototipiranje, vgrajeni sistemi, robotika</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<h1><strong>Jon Tepeš</strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					<h3>Magistrski študent<hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					Organizacija in management<br /> informacijskih sistemov<hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					Fakulteta za organizacijske vede<hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					Univerza v Mariboru</h3>
+					<h1><strong><a href="index.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototipiranje<span class="sep"> · </span><br />Vgrajeni sistemi<span class="sep"> · </span><br />Tiskana vezja<span class="sep"> · </span><br />Robotika</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Magistrski študent<br />FOV, Univerza v Mariboru<br />Ljubljana</p>
+					<p><a href="index-en.html">English</a></p>
 				</div>
 			</header>
 
@@ -30,64 +34,74 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Povezovanje digitalnih sistemov<br />
-							in fizičnih mehanizmov.</h2>
+							<h2>Od ideje do delujočega prototipa.</h2>
 						</header>
-						<p>Sem magistrski študent Organizacije in managementa informacijskih sistemov (FOV). Moja strast so <strong>Industrija 4.0, internet stvari (IoT) in hitro prototipiranje</strong>. Sposoben sem  načrtovanja mehanskih delov v programu Fusion 360, njihove integracije z elektroniko (ESP32, Raspberry Pi) in uporabe z umetno inteligenco podprtega razvoja za hitro izdelavo delujočih sistemov.</p>
+						<p>Načrtujem in izdelujem fizične prototipe: mehaniko v Fusion 360, tiskana vezja v KiCadu in EasyEDA, elektroniko s senzorji in motorji ter firmware za mikrokontrolerje. Najraje delam tam, kjer se srečajo mehanika, elektronika in programska oprema, in sistem iteriram, dokler ne deluje zanesljivo. Sem magistrski študent na Fakulteti za organizacijske vede (UM), v magistrski nalogi delam s kolaborativnim robotom (kobotom).</p>
+						<p><strong>Orodja in tehnologije:</strong> Fusion 360 · KiCad · EasyEDA · 3D tisk (Klipper) · ESP32 · nRF52840 · RP2040 · ATmega32u4 · Raspberry Pi · C/C++ · Python · BLE · MQTT · ESPHome · Home Assistant · Git · Linux</p>
 					</section>
 
 				<!-- Two -->
 					<section id="two">
-						<h2>Izpostavljeni projekti</h2>
+						<h2>Projekti</h2>
 						<div class="row">
-							<!-- Project 1: Factory -->
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="projekt-tovarna.html" class="image fit thumb"><img src="images/fulls/factory/digitalni-dvojcek.png" alt="IoT Model Tovarne" /></a>
-								<h3>IoT Digitalni dvojček (Model tovarne)</h3>
-								<p>Moj diplomski projekt: Miniaturna tovarna po načelih Industrije 4.0 s 3D tiskanim žerjavom, tekočimi trakovi in senzorji za prepoznavanje barv. Realnočasovno upravljanje preko MQTT, Raspberry Pi in Node.js nadzorne plošče.<br />
+								<a href="projekt-focuscoin.html" class="image fit thumb"><img src="images/thumbs/focus-coin.jpg" alt="Focus Coin – brezžični senzor orientacije" /></a>
+								<h3><a href="projekt-focuscoin.html">Focus Coin – brezžični senzor orientacije</a></h3>
+								<p>Kovanec, ki ga obrneš, pa računalnik in telefon preklopita v način za delo. nRF52840 in IMU v najglobljem spanju, BLE, aplikaciji za Linux in Android ter lastno tiskano vezje v KiCadu.</p>
 							</article>
-
-							<!-- Project 2: Pet Feeder -->
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="projekt-hranilnik.html" class="image fit thumb"><img src="images/fulls/pet-feeder/wide.jpg" alt="Pametni hranilnik" /></a>
-								<h3>Pametni hranilnik za živali</h3>
-								<p>Avtomatski hranilnik, ki vsak dan ob enakih, v naprej določenih časih, poda dozo briketov. Uporablja ESP32, 3D tisk in RTC. Zaradi globokega spanja uporablja zelo malo energije.<br />
+								<a href="projekt-toolchanger.html" class="image fit thumb"><img src="images/thumbs/toolchanger.jpg" alt="Menjalnik orodij za 3D tiskalnik" /></a>
+								<h3><a href="projekt-toolchanger.html">Menjalnik orodij za 3D tiskalnik</a></h3>
+								<p>Predelava tiskalnika Ender 3 Max za samodejno menjavo tiskalnih glav (Klipper). Prototip je uspešno opravil približno 9 od 10 menjav.</p>
 							</article>
-
-							<!-- Project 4: Plant System -->
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="projekt-loncek.html" class="image fit thumb"><img src="images/fulls/flower-pot/far.jpg" alt="Pametno korito" /></a>
-								<h3>ESPHome pametno korito za rastline</h3>
-								<p>Avtomatiziran sistem za samodejno zalivanje, zgrajen z ESP32 in platformo ESPHome. Sistem spremlja vlažnost zemlje, sproži vodno črpalko le, ko je to potrebno, in pametno uporablja način "deep sleep" za varčevanje z energijo.</p>
+								<a href="projekt-tovarna.html" class="image fit thumb"><img src="images/thumbs/factory.jpg" alt="IoT digitalni dvojček (model tovarne)" /></a>
+								<h3><a href="projekt-tovarna.html">IoT digitalni dvojček (model tovarne)</a></h3>
+								<p>Diplomski projekt: miniaturna tovarna s 3D tiskanim žerjavom, dvema tekočima trakovoma in barvnim sortiranjem. Realnočasovno upravljanje prek MQTT, Raspberry Pi-ja in Node.js nadzorne plošče s 3D prikazom.</p>
 							</article>
-
-							<!-- Project 5: Shadow Lamp & Maker Crafts -->
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="projekt-luc.html" class="image fit thumb"><img src="images/fulls/lamp/closeup.jpg" alt="RGB Senčna Svetilka" /></a>
-								<h3>RGB senčna svetilka</h3>
-								<p>Po meri izdelana svetilka, ki uporablja teorijo barv za ustvarjanje večbarvnih senc. Imam veliko praktičnih izkušenj ("hands-on") z delom s kompozitnimi in drugimi materiali: epoksi smolo, akrilom, betonom in lesom.<br />
+								<a href="projekt-starpointer.html" class="image fit thumb"><img src="images/thumbs/star-pointer.jpg" alt="Star Pointer – kazalec planetov" /></a>
+								<h3><a href="projekt-starpointer.html">Star Pointer – kazalec planetov</a></h3>
+								<p>Dvoosni kazalec, ki iz GPS lokacije in časa izračuna položaj izbranega planeta in se zaprtozančno usmeri vanj (ESP32, kompas, IMU).</p>
 							</article>
-
-							<!-- Dodatni projekti -->
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="projekt-eksperimenti.html" class="image fit thumb"><img src="images/fulls/clock/working.jpg" alt="Manjši projekti" /></a>
-								<h3>Manjši projekti</h3>
-								<p>Zbirka mojih manjših "tinkering" projektov: makro tipkovnice, hitpad krmilnik, pametna LED ura...<br />
+								<a href="projekt-tipkovnica.html" class="image fit thumb"><img src="images/thumbs/keyboard.jpg" alt="Makro tipkovnica z lastnim tiskanim vezjem" /></a>
+								<h3><a href="projekt-tipkovnica.html">Makro tipkovnica z lastnim tiskanim vezjem</a></h3>
+								<p>Tipkovnica z 20 tipkami: lastno tiskano vezje z ATmega32u4 in USB-C, firmware QMK in 3D tiskano ohišje.</p>
 							</article>
-
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="projekt-loncek.html" class="image fit thumb"><img src="images/thumbs/flower-pot.jpg" alt="Pametni lonček za rastline" /></a>
+								<h3><a href="projekt-loncek.html">Pametni lonček za rastline</a></h3>
+								<p>Samodejno zalivanje z ESP32 in ESPHome: meri vlago prsti in nivo vode, zaliva le po potrebi in med meritvami spi. Nova različica ima lastno tiskano vezje z baterijo 18650.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="projekt-hranilnik.html" class="image fit thumb"><img src="images/thumbs/pet-feeder.jpg" alt="Pametni hranilnik za živali" /></a>
+								<h3><a href="projekt-hranilnik.html">Pametni hranilnik za živali</a></h3>
+								<p>Hranilnik, ki ob nastavljenih urah odmeri porcijo briketov s 3D tiskanim polžnim mehanizmom. ESP32 z RTC modulom deluje tudi brez interneta.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="projekt-luc.html" class="image fit thumb"><img src="images/thumbs/lamp.jpg" alt="RGB senčna svetilka" /></a>
+								<h3><a href="projekt-luc.html">RGB senčna svetilka</a></h3>
+								<p>Svetilka z ločenimi rdečimi, zelenimi in modrimi viri svetlobe, ki ustvarjajo večbarvne sence. Betonska baza, 3D tisk in delo z različnimi materiali.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="projekt-eksperimenti.html" class="image fit thumb"><img src="images/thumbs/experiments.jpg" alt="Manjši projekti" /></a>
+								<h3><a href="projekt-eksperimenti.html">Manjši projekti</a></h3>
+								<p>Starejše makro tipkovnice, krmilnik za igre z RP2040 in LED ura, ki prikazuje dogodke iz Google Koledarja.</p>
+							</article>
 						</div>
 					</section>
 
 				<!-- Three -->
 					<section id="three">
 						<h2>Stopimo v stik</h2>
-						<p>Aktivno iščem študentsko delo v Sloveniji na področju IoT, razvoja in raziskav (R&D), aditivne proizvodnje (3D tiska) ali tehničnega prototipiranja. Delodajalcu prinašam edinstveno kombinacijo znanja iz upravljanja IT procesov in praktičnih inženirskih veščin.</p>
+						<p>Iščem študentsko delo ali prakso na področju razvoja (R&amp;D), prototipiranja, robotike ali mehatronike. Najhitreje me dosežete po e-pošti ali telefonu.</p>
 						<div class="row">
-							<div class="col-4 col-12-small">
+							<div class="col-8 col-12-small">
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon solid fa-home"><span class="label">Lokacija</span></h3>
-										Slovenija
+										Ljubljana
 									</li>
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Telefon</span></h3>

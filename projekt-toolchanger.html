@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="sl">
+	<head>
+		<title>Jon Tepeš - Menjalnik orodij za 3D tiskalnik</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header h1 a { color: inherit; border-bottom: 0; }
+			#header .sep { display: none; }
+			@media screen and (max-width: 980px) { #header .sep { display: inline; } }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<h1><strong><a href="index.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototipiranje<span class="sep"> · </span><br />Vgrajeni sistemi<span class="sep"> · </span><br />Tiskana vezja<span class="sep"> · </span><br />Robotika</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Magistrski študent<br />FOV, Univerza v Mariboru<br />Ljubljana</p>
+					<p><a href="projekt-toolchanger-en.html">English</a></p>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section>
+						<header class="major">
+							<h2>Menjalnik orodij za 3D tiskalnik</h2>
+						</header>
+
+						<ul class="actions">
+							<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na projekte</a></li>
+						</ul>
+
+						<p>Večbarvni tisk na običajnem tiskalniku pomeni ročno menjavo filamenta ali veliko odpadnega materiala. Zato sem tiskalnik Ender 3 Max predelal tako, da samodejno menja celotne tiskalne glave.</p>
+
+						<h3>Video: menjava glave med tiskom</h3>
+						<video src="images/video/toolchanger.mp4" poster="images/fulls/toolchanger/video-frame.jpg" controls muted loop playsinline preload="metadata" style="display: block; width: 100%; max-width: 420px; margin: 0 auto 2em auto;"></video>
+
+						<h3>Zasnova</h3>
+						<ul>
+							<li><strong>Mehanika:</strong> nosilci in priklop tiskalnih glav (glave Anycubic Kobra 2), zasnovani v Fusion 360 in 3D tiskani.</li>
+							<li><strong>Elektronika in firmware:</strong> tiskalnik sem prestavil na Klipper in ga nastavil za več tiskalnih glav ter samodejno menjavo med tiskom.</li>
+							<li><strong>Rezultat:</strong> na kalibracijskih tiskih je prototip uspešno opravil približno 9 od 10 menjav.</li>
+						</ul>
+
+						<h3>Status</h3>
+						<p>Projekt je ostal na stopnji prototipa: za zanesljivost, potrebno za dolge tiske, bi bilo treba še veliko razvoja. Tiskalnik je zdaj razstavljen, izkušnje pa so mi ostale: ponovljivo pozicioniranje, tolerance 3D tiskanih delov in sistematično testiranje.</p>
+
+						<h3>Galerija</h3>
+						<div class="box alt projekt-galerija">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6"><a href="images/fulls/toolchanger/tool-head.jpg" class="image fit"><img src="images/fulls/toolchanger/tool-head.jpg" alt="Tiskalna glava z nosilcem za menjavo" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/toolchanger/video-frame.jpg" class="image fit"><img src="images/fulls/toolchanger/video-frame.jpg" alt="Tiskalnik med menjavo glave" loading="lazy" /></a></div>
+							</div>
+						</div>
+
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/JonTepes" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.instructables.com/member/tootarU/" target="_blank" class="icon solid fa-wrench"><span class="label">Instructables</span></a></li>
+						<li><a href="mailto:jon@tepes.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Jon Tepeš</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('.projekt-galerija').poptrox({
+						caption: function($a) { return $a.children('img').attr('alt'); },
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: 'a.image',
+						usePopupCaption: true,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: 50
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>
