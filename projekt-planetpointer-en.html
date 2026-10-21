@@ -4,9 +4,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html lang="sl">
+<html lang="en">
 	<head>
-		<title>Jon Tepeš - Star Pointer</title>
+		<title>Jon Tepeš - Planet Pointer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,11 +21,11 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="Jon Tepeš" /></a>
-					<h1><strong><a href="index.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					<h3>Prototipiranje<span class="sep"> · </span><br />Vgrajeni sistemi<span class="sep"> · </span><br />Tiskana vezja<span class="sep"> · </span><br />Robotika</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
-					<p>Magistrski študent<br />FOV, Univerza v Mariboru<br />Ljubljana</p>
-					<p><a href="projekt-starpointer-en.html">English</a></p>
+					<a href="index-en.html" class="image avatar"><img src="images/avatar.jpg" alt="Jon Tepeš" /></a>
+					<h1><strong><a href="index-en.html">Jon Tepeš</a></strong></h1><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<h3>Prototyping<span class="sep"> · </span><br />Embedded systems<span class="sep"> · </span><br />PCB design<span class="sep"> · </span><br />Robotics</h3><hr style="margin-top: 0.1em;margin-bottom: 0.1em;">
+					<p>Master's student<br />University of Maribor<br />Ljubljana, Slovenia</p>
+					<p><a href="projekt-planetpointer.html">Slovenščina</a></p>
 				</div>
 			</header>
 
@@ -33,34 +33,34 @@
 			<div id="main">
 					<section>
 						<header class="major">
-							<h2>Star Pointer – kazalec planetov</h2>
+							<h2>Planet Pointer</h2>
 						</header>
 
 						<ul class="actions">
-							<li><a href="index.html" class="button small icon solid fa-arrow-left">Nazaj na projekte</a></li>
+							<li><a href="index-en.html" class="button small icon solid fa-arrow-left">Back to projects</a></li>
 						</ul>
 
-						<p>Dvoosni kazalec, ki iz GPS lokacije in točnega časa izračuna, kje na nebu je izbrani planet, in se usmeri vanj.</p>
+						<p>A two-axis pointer that works out where in the sky a chosen planet is from its GPS location and the exact time, then points at it.</p>
 
 						<h3>Video</h3>
 						<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 2em;">
 							<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/T3wj16ys048" frameborder="0" allowfullscreen></iframe>
 						</div>
 
-						<h3>Kako deluje</h3>
+						<h3>How it works</h3>
 						<ul>
-							<li><strong>Mehanika:</strong> 3D tiskano ohišje in kazalec, ki ga premikata dva motorja: eden za smer (azimut), drugi za nagib.</li>
-							<li><strong>Senzorji:</strong> GPS modul da lokacijo in čas, kompas in IMU na vrhu kazalca pa merita, kam kazalec dejansko kaže.</li>
-							<li><strong>Krmiljenje:</strong> mikrokontroler ESP32 primerja izračunano in izmerjeno smer ter zaprtozančno popravlja položaj kazalca.</li>
+							<li><strong>Mechanics:</strong> a 3D-printed body and pointer driven by two motors: one for direction (azimuth), one for tilt.</li>
+							<li><strong>Sensors:</strong> a GPS module provides location and time; a compass and an IMU on top of the pointer measure where it actually points.</li>
+							<li><strong>Control:</strong> an ESP32 compares the computed and measured direction and corrects the pointer's position in closed loop.</li>
 						</ul>
 
-						<h3>Nadgradnja v razvoju: OmniPointer</h3>
-						<p>Isti kazalec kot navigacijska naprava: cilj izbereš na zemljevidu v brskalniku na telefonu in ga prek Bluetootha pošlješ kazalcu, ki pokaže smer po cesti ali v ravni črti. Firmware in spletni vmesnik sta napisana, na napravi še nista preizkušena.</p>
+						<h3>Upgrade in progress: OmniPointer</h3>
+						<p>The same pointer as a navigation device: pick a destination on a map in your phone's browser and send it over Bluetooth; the pointer shows the direction along the road or in a straight line. The firmware and web interface are written but not yet tested on the device.</p>
 
-						<h3>Galerija</h3>
+						<h3>Gallery</h3>
 						<div class="box alt projekt-galerija">
 							<div class="row gtr-50 gtr-uniform">
-								<div class="col-6"><a href="images/fulls/star-pointer/assembled.jpg" class="image fit"><img src="images/fulls/star-pointer/assembled.jpg" alt="Sestavljen Star Pointer" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/planet-pointer/assembled.jpg" class="image fit"><img src="images/fulls/planet-pointer/assembled.jpg" alt="Assembled Planet Pointer" loading="lazy" /></a></div>
 							</div>
 						</div>
 
