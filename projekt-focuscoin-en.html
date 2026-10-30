@@ -52,8 +52,9 @@
 						<h3>Custom PCB (second revision)</h3>
 						<ul>
 							<li><strong>Design:</strong> a 30 mm round board designed in KiCad: a Bluetooth module with an EFR32BG22, a LIS2DW12 accelerometer with built-in orientation detection, a CR2032 cell on the back, and SWD pads for programming.</li>
-							<li><strong>Protection and power:</strong> a P-MOSFET protects against a reversed battery. Estimated average current is about 2 µA, which means several years on one cell.</li>
-							<li><strong>Status:</strong> DRC clean; the board has not been manufactured yet.</li>
+							<li><strong>Protection and power:</strong> a P-MOSFET protects against a reversed battery. The chip sleeps in its deepest mode (EM4) and the accelerometer wakes it when the coin is flipped; estimated sleep current is about 1.2 µA, which means several years on one cell.</li>
+							<li><strong>Status:</strong> manufactured, assembled and working. I soldered the parts myself with a resin-printed paste stencil and hot air and flashed the firmware over SWD.</li>
+							<li><strong>Bring-up:</strong> on the first board the accelerometer never answered on I2C, even though it looked fine from outside. A test firmware and an I2C scan showed the pull-ups and the module were fine, so the fault was under the chip: open solder joints under the LGA package. Reworking it with fresh solder and hot air fixed it.</li>
 						</ul>
 
 						<h3>Gallery</h3>
@@ -61,6 +62,8 @@
 							<div class="row gtr-50 gtr-uniform">
 								<div class="col-6"><a href="images/fulls/focus-coin/coin-top.jpg" class="image fit"><img src="images/fulls/focus-coin/coin-top.jpg" alt="Focus Coin – top side" loading="lazy" /></a></div>
 								<div class="col-6"><a href="images/fulls/focus-coin/coin-bottom.jpg" class="image fit"><img src="images/fulls/focus-coin/coin-bottom.jpg" alt="Focus Coin – bottom side" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/focus-coin/pcb-top.jpg" class="image fit"><img src="images/fulls/focus-coin/pcb-top.jpg" alt="Assembled PCB – top side, 30 mm" loading="lazy" /></a></div>
+								<div class="col-6"><a href="images/fulls/focus-coin/pcb-bottom.jpg" class="image fit"><img src="images/fulls/focus-coin/pcb-bottom.jpg" alt="Assembled PCB – bottom side with CR2032 holder" loading="lazy" /></a></div>
 								<div class="col-4"><a href="images/fulls/focus-coin/android-app.jpg" class="image fit"><img src="images/fulls/focus-coin/android-app.jpg" alt="Android app: choosing blocked websites" loading="lazy" /></a></div>
 								<div class="col-4"><a href="images/fulls/focus-coin/pcb-render-top.jpg" class="image fit"><img src="images/fulls/focus-coin/pcb-render-top.jpg" alt="Custom PCB – top side (KiCad)" loading="lazy" /></a></div>
 								<div class="col-4"><a href="images/fulls/focus-coin/pcb-render-bottom.jpg" class="image fit"><img src="images/fulls/focus-coin/pcb-render-bottom.jpg" alt="Custom PCB – bottom side with battery holder" loading="lazy" /></a></div>
