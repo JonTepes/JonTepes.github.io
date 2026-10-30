@@ -9,7 +9,7 @@
 		<title>Jon Tepeš - Prototyping, embedded systems, robotics</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css?v=4" />
+		<link rel="stylesheet" href="assets/css/main.css?v=5" />
 		<style>
 			#header h1 a { color: inherit; border-bottom: 0; }
 			#header .sep { display: none; }
@@ -43,49 +43,48 @@
 				<!-- Two -->
 					<section id="two">
 						<h2>Projects</h2>
-						<p class="tools legend"><span class="t-mech">Mechanics and fabrication</span> <span class="t-pcb">PCB design</span> <span class="t-mcu">Microcontrollers</span> <span class="t-io">Sensors and actuators</span> <span class="t-sw">Software</span></p>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="projekt-focuscoin-en.html" class="image fit thumb"><img src="images/thumbs/focus-coin.jpg" alt="Focus Coin – wireless orientation sensor" /></a>
 								<h3><a href="projekt-focuscoin-en.html">Focus Coin – wireless orientation sensor</a></h3>
 								<p>Flip the coin and your computer and phone switch into work mode. My own 30 mm PCB, assembled and brought up by me, BLE, and Linux and Android apps.</p>
-								<p class="tools"><span class="t-mech">resin 3D printing</span> <span class="t-pcb">KiCad</span> <span class="t-pcb">SWD</span> <span class="t-mcu">EFR32BG22</span> <span class="t-mcu">nRF52840</span> <span class="t-io">LIS2DW12</span> <span class="t-sw">BLE</span></p>
+								<p class="tools"><span class="t-mech">resin 3D printing</span> <span class="t-pcb">KiCad</span> <span class="t-pcb">SWD</span> <span class="t-mcu">EFR32BG22</span> <span class="t-mcu">nRF52840</span> <span class="t-io">LIS2DW12</span> <span class="t-lang">C</span> <span class="t-lang">C++</span> <span class="t-lang">Python</span> <span class="t-lang">Rust</span> <span class="t-lang">Kotlin</span> <span class="t-sw">BLE</span></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="projekt-toolchanger-en.html" class="image fit thumb"><img src="images/thumbs/toolchanger.jpg" alt="Tool changer for a 3D printer" /></a>
 								<h3><a href="projekt-toolchanger-en.html">Tool changer for a 3D printer</a></h3>
 								<p>An Ender 3 Max converted to swap print heads automatically (Klipper). The prototype completed about 9 out of 10 tool changes.</p>
-								<p class="tools"><span class="t-mech">Fusion 360</span> <span class="t-mech">3D printing</span> <span class="t-sw">Klipper</span></p>
+								<p class="tools"><span class="t-mech">Fusion 360</span> <span class="t-mech">3D printing</span> <span class="t-lang">G-code</span> <span class="t-sw">Klipper</span></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="projekt-tovarna-en.html" class="image fit thumb"><img src="images/thumbs/factory.jpg" alt="IoT digital twin (factory model)" /></a>
 								<h3><a href="projekt-tovarna-en.html">IoT digital twin (factory model)</a></h3>
 								<p>Bachelor's thesis: a miniature factory with a 3D-printed crane, two conveyor belts and colour sorting, controlled in real time over MQTT from a Raspberry Pi and a Node.js dashboard with a 3D view.</p>
-								<p class="tools"><span class="t-mech">Fusion 360</span> <span class="t-mech">3D printing</span> <span class="t-mcu">microcontrollers</span> <span class="t-mcu">Raspberry Pi</span> <span class="t-sw">MQTT</span> <span class="t-sw">Node.js</span> <span class="t-sw">Three.js</span></p>
+								<p class="tools"><span class="t-mech">Fusion 360</span> <span class="t-mech">3D printing</span> <span class="t-mcu">microcontrollers</span> <span class="t-mcu">Raspberry Pi</span> <span class="t-lang">C++</span> <span class="t-lang">JavaScript</span> <span class="t-lang">HTML</span> <span class="t-sw">MQTT</span> <span class="t-sw">Node.js</span> <span class="t-sw">Three.js</span></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="projekt-planetpointer-en.html" class="image fit thumb"><img src="images/thumbs/planet-pointer.jpg" alt="Planet Pointer" /></a>
 								<h3><a href="projekt-planetpointer-en.html">Planet Pointer</a></h3>
 								<p>A two-axis pointer that computes a planet's position from GPS location and time, then points at it in closed loop (ESP32, compass, IMU).</p>
-								<p class="tools"><span class="t-mech">3D printing</span> <span class="t-mcu">ESP32-C3</span> <span class="t-io">GPS</span> <span class="t-io">compass</span> <span class="t-io">IMU</span> <span class="t-io">DC motors</span> <span class="t-sw">PlatformIO</span></p>
+								<p class="tools"><span class="t-mech">3D printing</span> <span class="t-mcu">ESP32-C3</span> <span class="t-io">GPS</span> <span class="t-io">compass</span> <span class="t-io">IMU</span> <span class="t-io">DC motors</span> <span class="t-lang">C++</span> <span class="t-lang">JavaScript</span> <span class="t-sw">PlatformIO</span></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="projekt-tipkovnica-en.html" class="image fit thumb"><img src="images/thumbs/keyboard.jpg" alt="Macro keyboard with a custom PCB" /></a>
 								<h3><a href="projekt-tipkovnica-en.html">Macro keyboard with a custom PCB</a></h3>
 								<p>A 20-key keyboard: custom PCB with an ATmega32u4 and USB-C, QMK firmware and a 3D-printed case.</p>
-								<p class="tools"><span class="t-mech">3D printing</span> <span class="t-pcb">KiCad</span> <span class="t-pcb">EasyEDA</span> <span class="t-pcb">JLCPCB</span> <span class="t-mcu">ATmega32u4</span> <span class="t-sw">QMK</span></p>
+								<p class="tools"><span class="t-mech">3D printing</span> <span class="t-pcb">KiCad</span> <span class="t-pcb">EasyEDA</span> <span class="t-pcb">JLCPCB</span> <span class="t-mcu">ATmega32u4</span> <span class="t-lang">C</span> <span class="t-sw">QMK</span></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="projekt-loncek-en.html" class="image fit thumb"><img src="images/thumbs/flower-pot.jpg" alt="Smart plant pot" /></a>
 								<h3><a href="projekt-loncek-en.html">Smart plant pot</a></h3>
 								<p>Automatic watering with an ESP32 and ESPHome: measures soil moisture and water level, waters only when needed and sleeps between readings. The new version has a custom PCB with an 18650 battery.</p>
-								<p class="tools"><span class="t-mech">Fusion 360</span> <span class="t-mech">3D printing</span> <span class="t-pcb">KiCad</span> <span class="t-mcu">ESP32-C3</span> <span class="t-sw">ESPHome</span> <span class="t-sw">Home Assistant</span></p>
+								<p class="tools"><span class="t-mech">Fusion 360</span> <span class="t-mech">3D printing</span> <span class="t-pcb">KiCad</span> <span class="t-mcu">ESP32-C3</span> <span class="t-lang">YAML</span> <span class="t-sw">ESPHome</span> <span class="t-sw">Home Assistant</span></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="projekt-hranilnik-en.html" class="image fit thumb"><img src="images/thumbs/pet-feeder.jpg" alt="Smart pet feeder" /></a>
 								<h3><a href="projekt-hranilnik-en.html">Smart pet feeder</a></h3>
 								<p>Dispenses a portion of kibble at set times through a 3D-printed auger. An ESP32 with an RTC module keeps it working without internet.</p>
-								<p class="tools"><span class="t-mech">Fusion 360</span> <span class="t-mech">3D printing</span> <span class="t-mcu">ESP32</span> <span class="t-io">RTC</span> <span class="t-io">stepper motor</span> <span class="t-sw">C++</span></p>
+								<p class="tools"><span class="t-mech">Fusion 360</span> <span class="t-mech">3D printing</span> <span class="t-mcu">ESP32</span> <span class="t-io">RTC</span> <span class="t-io">stepper motor</span> <span class="t-lang">C++</span></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="projekt-luc-en.html" class="image fit thumb"><img src="images/thumbs/lamp.jpg" alt="RGB shadow lamp" /></a>
@@ -97,7 +96,7 @@
 								<a href="projekt-eksperimenti-en.html" class="image fit thumb"><img src="images/thumbs/experiments.jpg" alt="Smaller projects" /></a>
 								<h3><a href="projekt-eksperimenti-en.html">Smaller projects</a></h3>
 								<p>Earlier macro keyboards, an RP2040 game controller and an LED clock that shows events from Google Calendar.</p>
-								<p class="tools"><span class="t-mcu">RP2040</span> <span class="t-mcu">ESP32</span> <span class="t-io">LED strips</span> <span class="t-sw">GP2040-CE</span> <span class="t-sw">Google Calendar API</span></p>
+								<p class="tools"><span class="t-mcu">RP2040</span> <span class="t-mcu">ESP32</span> <span class="t-io">LED strips</span> <span class="t-lang">C++</span> <span class="t-sw">GP2040-CE</span> <span class="t-sw">Google Calendar API</span></p>
 							</article>
 						</div>
 					</section>
