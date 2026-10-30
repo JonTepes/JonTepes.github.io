@@ -3244,6 +3244,5 @@ input, select, textarea {
 		p.tools .t-pcb  { background: #e6f0fb; border-color: #a9c8ee; color: #2a5f9e; }
 		p.tools .t-mcu  { background: #e5f6f0; border-color: #9fd9c4; color: #237a5d; }
 		p.tools .t-io   { background: #f1eafb; border-color: #c9b2ec; color: #6941a6; }
-		p.tools .t-lang { background: #fdebee; border-color: #f0b3bd; color: #a8324a; }
-		p.tools .t-sw   { background: #eff0f2; border-color: #c4c8cf; color: #4b5260; }
+		p.tools .t-sw   { background: #fdebee; border-color: #f0b3bd; color: #a8324a; }
 
